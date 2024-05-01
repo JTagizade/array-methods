@@ -107,13 +107,27 @@ const athletes = [  {
 // hometask2
 
 
-const medals10 = [];
+// const medals10 = [];
+
+// for (let i=0; i < athletes.length; i++) {
+//     if (athletes[i].gender === "Female" && athletes[i].totalMedals >= 10) {
+//         medals10.push(athletes[i]);
+//     }
+// }
+
+ 
+// console.log(medals10);
+
+
+// hometask8
+
+const americansWorldRecords = [];
 
 for (let i=0; i < athletes.length; i++) {
-    if (athletes[i].gender === "Female" && athletes[i].totalMedals >= 10) {
-        medals10.push(athletes[i]);
+    if (athletes[i].hasWorldRecord && athletes[i].country === "United States") {
+        americansWorldRecords.push(athletes[i]);
     }
 }
 
  
-console.log(medals10);
+console.log(americansWorldRecords);
