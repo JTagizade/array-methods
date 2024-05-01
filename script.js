@@ -92,16 +92,28 @@ const athletes = [  {
 
 // hometask1
 
-const hasWorldRecords = [];
-const homeTask1 = document.getElementById("hometask1");
+// const hasWorldRecords = [];
+
+// for (let i=0; i < athletes.length; i++) {
+//     if (athletes[i].hasWorldRecord) {
+//         hasWorldRecords.push(athletes[i]);
+//     }
+// }
+
+ 
+// console.log(hasWorldRecords);
+
+
+// hometask2
+
+
+const medals10 = [];
 
 for (let i=0; i < athletes.length; i++) {
-    if (athletes[i].hasWorldRecord) {
-        hasWorldRecords.push(athletes[i]);
+    if (athletes[i].gender === "Female" && athletes[i].totalMedals >= 10) {
+        medals10.push(athletes[i]);
     }
 }
 
  
-console.log(hasWorldRecords);
-
-
+console.log(medals10);
