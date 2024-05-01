@@ -121,13 +121,31 @@ const athletes = [  {
 
 // hometask8
 
-const americansWorldRecords = [];
+// const americansWorldRecords = [];
+
+// for (let i=0; i < athletes.length; i++) {
+//     if (athletes[i].hasWorldRecord && athletes[i].country === "United States") {
+//         americansWorldRecords.push(athletes[i]);
+//     }
+// }
+
+ 
+// console.log(americansWorldRecords);
+
+
+
+
+
+
+// hometask8
+
+
+const namesAndCountries = [];
 
 for (let i=0; i < athletes.length; i++) {
-    if (athletes[i].hasWorldRecord && athletes[i].country === "United States") {
-        americansWorldRecords.push(athletes[i]);
+    if (athletes[i].hasWorldRecord) {
+        namesAndCountries.push(athletes[i].name, athletes[i].country);
     }
 }
 
- 
-console.log(americansWorldRecords);
+console.log(namesAndCountries);
