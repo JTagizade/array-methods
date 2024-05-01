@@ -134,18 +134,25 @@ const athletes = [  {
 
 
 
+// hometask5
 
 
+const medals = [];
+let medalAmount = 0;
 
-// hometask8
-
-
-const namesAndCountries = [];
 
 for (let i=0; i < athletes.length; i++) {
-    if (athletes[i].hasWorldRecord) {
-        namesAndCountries.push(athletes[i].name, athletes[i].country);
-    }
+    
+    medals.push(athletes[i].totalMedals);
+    
 }
 
-console.log(namesAndCountries);
+for ( let x = 0; x < medals.length; x++){
+
+    medalAmount += medals[x];
+}
+
+console.log(medalAmount);
+
+
+
