@@ -92,16 +92,66 @@ const athletes = [  {
 
 // hometask1
 
-const hasWorldRecords = [];
-const homeTask1 = document.getElementById("hometask1");
+// const hasWorldRecords = [];
 
-for (let i=0; i < athletes.length; i++) {
-    if (athletes[i].hasWorldRecord) {
-        hasWorldRecords.push(athletes[i]);
-    }
-}
+// for (let i=0; i < athletes.length; i++) {
+//     if (athletes[i].hasWorldRecord) {
+//         hasWorldRecords.push(athletes[i]);
+//     }
+// }
 
  
-console.log(hasWorldRecords);
+// console.log(hasWorldRecords);
+
+
+// hometask2
+
+
+// const medals10 = [];
+
+// for (let i=0; i < athletes.length; i++) {
+//     if (athletes[i].gender === "Female" && athletes[i].totalMedals >= 10) {
+//         medals10.push(athletes[i]);
+//     }
+// }
+
+ 
+// console.log(medals10);
+
+
+// hometask8
+
+// const americansWorldRecords = [];
+
+// for (let i=0; i < athletes.length; i++) {
+//     if (athletes[i].hasWorldRecord && athletes[i].country === "United States") {
+//         americansWorldRecords.push(athletes[i]);
+//     }
+// }
+
+ 
+// console.log(americansWorldRecords);
+
+
+
+// hometask5
+
+
+const medals = [];
+let medalAmount = 0;
+
+
+for (let i=0; i < athletes.length; i++) {
+    
+    medals.push(athletes[i].totalMedals);
+    
+}
+
+for ( let x = 0; x < medals.length; x++){
+
+    medalAmount += medals[x];
+}
+
+console.log(medalAmount);
 
 
